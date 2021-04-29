@@ -52,5 +52,6 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 
 Implement one failing test and at least one passing test:
 
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+- **"1. Fail Test case to check NULL"** values the name of a **failing** test
+- **"2. Pass Test case to check NULL values"** enter the name of a **passing** test
+
