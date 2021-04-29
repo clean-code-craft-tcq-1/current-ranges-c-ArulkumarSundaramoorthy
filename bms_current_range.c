@@ -2,6 +2,7 @@
 #include "bms_current_range.h"
 #include "math.h"
 
-int checkAndCountCurrentRanges(const float* readingSet, int setLength)
+Status checkAndCountCurrentRanges(const float* readingSet, int setLength)
 {
+  return 0;
 }
