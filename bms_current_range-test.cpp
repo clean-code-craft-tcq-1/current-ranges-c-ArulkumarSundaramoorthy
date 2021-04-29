@@ -9,6 +9,6 @@ TEST_CASE("Test case to check NULL values")
 {
     float readingSet[] = NULL;
     int setLength = sizeof(readingSet) / sizeof(readingSet[0]);
-    int testStatus  = checkAndCountCurrentRanges(readingSet, setLength);
+    Status testStatus  = checkAndCountCurrentRanges(readingSet, setLength);
     REQUIRE(testStatus == 1);
 }
