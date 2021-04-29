@@ -10,7 +10,7 @@ TEST_CASE("1. Fail Test case to check NULL values")
     int readingSet[] = {0};
      Status testStatus;
     int setLength = sizeof(readingSet) / sizeof(readingSet[0]);
-    testStatus  = checkAndCountCurrentRanges(readingSet, setLength);
+    testStatus  = checkAndCountCurrentRanges(NULL, setLength);
     REQUIRE(testStatus == TEST_FAIL);
 }
 
@@ -19,6 +19,6 @@ TEST_CASE("2. Pass Test case to check NULL values")
     int readingSet[] = {0};
      Status testStatus;
     int setLength = sizeof(readingSet) / sizeof(readingSet[0]);
-    testStatus  = checkAndCountCurrentRanges(readingSet, setLength);
-    REQUIRE(testStatus == TEST_FAIL);
+    testStatus  = checkAndCountCurrentRanges(NULL, setLength);
+    REQUIRE(testStatus == NULL_VALUE);
 }
