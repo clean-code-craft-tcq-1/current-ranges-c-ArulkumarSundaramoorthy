@@ -1,7 +1,7 @@
 /* Define */
 
 /* Prototypes */
-int checkAndCountCurrentRanges(const float* readingSet, int setLength);
+int checkAndCountCurrentRanges(int * readingSet, int setLength);
 
 /* Variables */
 typedef enum {
