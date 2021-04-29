@@ -5,10 +5,10 @@
 #include "stdlib.h"
 #include "math.h"
 
-TEST_CASE("Test case to check NULL values")
+TEST_CASE("1. Fail Test case to check NULL values")
 {
-    float readingSet[] = NULL;
+    float readingSet[] = {3, 3, 5, 4, 10, 11, 12};
     int setLength = sizeof(readingSet) / sizeof(readingSet[0]);
-    Status testStatus  = checkAndCountCurrentRanges(readingSet, setLength);
-    REQUIRE(testStatus == 1);
+    Status testStatus  = checkAndCountCurrentRanges(NULL, setLength);
+    REQUIRE(testStatus == TEST_FAIL);
 }
