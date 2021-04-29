@@ -1,4 +1,5 @@
 /* Define */
+#define ACCEPTABLE_RANGE 2
 
 /* Type Def */
 typedef enum {
