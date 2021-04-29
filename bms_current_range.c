@@ -4,5 +4,9 @@
 
 Status checkAndCountCurrentRanges(int * readingSet, int setLength)
 {
+  if((readingSet == NULL) || (setLength == 0))
+  {
+    return NULL_VALUE;
+  }
   return TEST_FAIL;
 }
